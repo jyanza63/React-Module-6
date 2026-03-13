@@ -1,19 +1,20 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from "./pages/Home";
-import Counter from "./pages/Counter";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Features from "./components/Features";
+import Stats from "./components/Stats";
+import CTA from "./components/CTA";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <Router>
-      <nav className="navbar">
-        <Link to="/">Home</Link>
-        <Link to="/counter">Counter</Link>
-      </nav>
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/counter" element={<Counter />} />
-      </Routes>
-    </Router>
+    <>
+      <Navbar />
+      <Hero />
+      <Features />
+      <Stats />
+      <CTA />
+      <Footer />
+    </>
   );
 }
+
