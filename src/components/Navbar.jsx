@@ -18,3 +18,5 @@ export default function Navbar({ user }) {
     </nav>
   );
 }
+<Link to="/scanner">Media Scanner</Link>
+
