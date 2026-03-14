@@ -1,19 +1,11 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from "./pages/Home";
-import Counter from "./pages/Counter";
-
-export default function App() {
+export default function Home() {
   return (
-    <Router>
-      <nav className="navbar">
-        <Link to="/">Home</Link>
-        <Link to="/counter">Counter</Link>
-      </nav>
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/counter" element={<Counter />} />
-      </Routes>
-    </Router>
+    <div className="page">
+      <h1>Welcome to Juan Yanza’s React Final Project</h1>
+      <p>
+        This app recreates my JavaScript final project using React: counter,
+        profile dashboard, forms, API calls, and auth.
+      </p>
+    </div>
   );
 }
