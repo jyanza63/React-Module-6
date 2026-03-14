@@ -118,3 +118,104 @@ input, textarea {
   padding: 16px;
   border-radius: 8px;
 }
+/* MEDIA SCANNER SCREEN -------------------------------------- */
+
+.media-screen {
+  width: 100%;
+  height: 100vh;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.room-bg {
+  width: 90%;
+  height: 90%;
+  background: url("https://images.unsplash.com/photo-1586105251261-72a756497a12")
+    center/cover no-repeat;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+}
+
+/* TV -------------------------------------------------------- */
+
+.tv-frame {
+  width: 420px;
+  height: 260px;
+  background: #000;
+  border-radius: 12px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  overflow: hidden;
+}
+
+.tv-content {
+  width: 100%;
+  height: 100%;
+}
+
+.tv-face {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* AR OVERLAY ------------------------------------------------ */
+
+.ar-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.ar-circle {
+  width: 180px;
+  height: 180px;
+  border: 4px solid rgba(255,255,0,0.7);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 25%;
+  left: 45%;
+  transform: translateX(-50%);
+  backdrop-filter: blur(2px);
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: translateX(-50%) scale(1); opacity: 1; }
+  50% { transform: translateX(-50%) scale(1.1); opacity: 0.7; }
+  100% { transform: translateX(-50%) scale(1); opacity: 1; }
+}
+
+/* LABELS ---------------------------------------------------- */
+
+.ar-label {
+  position: absolute;
+  background: rgba(255,255,255,0.15);
+  padding: 10px 16px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.top-left {
+  top: 18%;
+  left: 12%;
+}
+
+.bottom-left {
+  bottom: 18%;
+  left: 12%;
+}
+
+.bottom-right {
+  bottom: 18%;
+  right: 12%;
+}
