@@ -1,37 +1,35 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useState } from "react";
-import Navbar from "./components/Navbar";
-import ProtectedRoute from "./components/ProtectedRoute";
-
 import Home from "./pages/Home";
 import Counter from "./pages/Counter";
 import Profile from "./pages/Profile";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
+import ProtectedRoute from "./components/ProtectedRoute";
 
-export default function App() {
-  const [user, setUser] = useState(null); // null = logged out
-
+function App() {
   return (
     <Router>
-      <Navbar user={user} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/counter" element={<Counter />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/login" element={<Login setUser={setUser} />} />
+        <Route path="/login" element={<Login />} />
+
         <Route
           path="/dashboard"
           element={
-            <ProtectedRoute user={user}>
+            <ProtectedRoute>
               <Dashboard />
             </ProtectedRoute>
           }
         />
+
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );
 }
+
+export default App;
 
