@@ -1,3 +1,5 @@
+import profilePic from "../assets/profile.jpg";
+
 export default function Hero() {
   return (
     <section className="hero">
@@ -16,14 +18,19 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="hero-card">
-        <p className="card-title">Portfolio Snapshot</p>
-        <ul>
-          <li><span>Projects</span><strong>8+</strong></li>
-          <li><span>Focus</span><strong>React & UI/UX</strong></li>
-          <li><span>Location</span><strong>Queens, NY</strong></li>
-        </ul>
+      <div className="hero-right">
+        <img src={profilePic} alt="Juan Yanza" className="profile-pic" />
+
+        <div className="hero-card">
+          <p className="card-title">Portfolio Snapshot</p>
+          <ul>
+            <li><span>Projects</span><strong>8+</strong></li>
+            <li><span>Focus</span><strong>React & UI/UX</strong></li>
+            <li><span>Location</span><strong>Queens, NY</strong></li>
+          </ul>
+        </div>
       </div>
     </section>
   );
 }
+
