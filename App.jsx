@@ -1,3 +1,16 @@
-import MediaScanner from "./pages/MediaScanner";
+import Projects from "./components/Projects";
 
-<Route path="/scanner" element={<MediaScanner />} />
+export default function App() {
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <Features />
+      <Stats />
+      <Projects />
+      <CTA />
+      <Footer />
+    </>
+  );
+}
+
