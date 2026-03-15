@@ -1,0 +1,43 @@
+.projects {
+  padding: 4rem 5vw;
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: #0f172a;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid #334155;
+  transition: 0.25s;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: #6366f1;
+}
+
+.project-card .tech {
+  display: inline-block;
+  margin: 0.5rem 0 1rem;
+  font-size: 0.8rem;
+  color: #a5b4fc;
+}
+
+.project-btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: #6366f1;
+  color: white;
+  border-radius: 999px;
+  text-decoration: none;
+}
