@@ -25,3 +25,26 @@ body {
   padding: 2rem;
 }
 
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 4px solid #6366f1;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  transition: 0.25s;
+}
+
+.profile-pic:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 28px 60px rgba(0,0,0,0.55);
+}
+
+
