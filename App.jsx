@@ -14,3 +14,21 @@ export default function App() {
   );
 }
 
+import CarLoadingPage from "./components/CarLoadingPage";
+
+export default function App() {
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <Features />
+      <Stats />
+      <Projects />
+      <CarLoadingPage />   {/* ← NEW */}
+      <CTA />
+      <Footer />
+    </>
+  );
+}
+
+
