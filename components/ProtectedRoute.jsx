@@ -1,4 +1,4 @@
-import { Navigate } from "react-router-dom";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 export default function ProtectedRoute({ user, children }) {
   if (!user) {
