@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Login from "./pages/Login";
 
 export default function Login({ setUser }) {
   const [form, setForm] = useState({ email: "", password: "" });
