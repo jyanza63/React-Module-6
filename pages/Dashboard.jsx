@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-
+import Dashboard from "./pages/Dashboard";
 export default function Dashboard() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
